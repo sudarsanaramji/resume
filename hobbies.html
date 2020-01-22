@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: Violet;
+}
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #ccc;
+  padding: 20px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: Right;
+  padding: 20px;
+  width: 70%;
+  background-color: #f0f0f0;
+  height: 300px; 
+}
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: left;
+  color: red;
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>HOBBIES</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><p>HOBBIES</p></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>HOBBIES</h1>
+    <p>
+*PLAYING FOOTBALL&CRICKET<br>
+*LISTENING TO MELODY SONGS<br>
+*PLAYING WITH PET ANIMALS<br>
+</p>
+  </article>
+</section>
+
+<footer>
+  <p>Maintained by,
+  ramji</p>
+</footer>
+
+</body>
+</html>
